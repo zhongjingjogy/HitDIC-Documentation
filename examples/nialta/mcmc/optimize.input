@@ -1,0 +1,9 @@
+[varselgampi]
+maxiter = 250;
+bounds = (default, -300, 50);
+
+[mcmc]
+bounds = (default, -350, 0);
+maxiter = 20000;
+chainnumber = 10;
+alpha = 0.45;

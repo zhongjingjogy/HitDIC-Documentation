@@ -1,0 +1,46 @@
+{
+    "_result": [
+        {
+            "comid": "A0-A1-A2",
+            "elapsed": 62081.714160894,
+            "opid": "mcmc-txY2ks",
+            "result": {
+                "cost": 1.0800656720341592e-05,
+                "unknowns": [
+                    "A0",
+                    "A1",
+                    "A2"
+                ],
+                "values": [
+                    -594549.917752809,
+                    -364395.12412027974,
+                    -471299.3956030595
+                ]
+            }
+        }
+    ],
+    "input": [
+        {
+            "content": "\n[varselgampi]\nmaxiter = 250;\nbounds = (default, -300, 50);\n\n[mcmc]\nbounds = (default, -350, 0);\nmaxiter = 20000;\nchainnumber = 10;\nalpha = 0.45;\n",
+            "item": "optimize.input"
+        },
+        {
+            "content": "\n\n[ta-1473K-c1]\nelements = Al, Ta, Ni;\nclefts = 5.0000e-04, 2.7700e-02, 9.7180e-01;\ncrights = 2.7500e-02, 0.0000e+00, 9.7250e-01;\ntemperature = 1473.00;\ntime = 500400.00;\nlength = 1.200000e-03;\ninitpos = 5.641974e-04;\nexppath = src/nialta/experimetaldata-ta-1473K-c1.txt;\ndbname = AL-NI-TA;\n\n\n[ta-1473K-c2]\nelements = Al, Ta, Ni;\nclefts = 0.0000e+00, 0.0000e+00, 9.6200e-01;\ncrights = 3.8000e-02, 1.7400e-02, 9.8260e-01;\ntemperature = 1473.00;\ntime = 500400.00;\nlength = 1.400000e-03;\ninitpos = 6.458873e-04;\nexppath = src/nialta/experimetaldata-ta-1473K-c2.txt;\ndbname = AL-NI-TA;\n\n\n[ta-1473K-c3]\nelements = Al, Ta, Ni;\nclefts = 0.0000e+00, 0.0000e+00, 1.0000e+00;\ncrights = 1.9000e-02, 2.7500e-02, 9.5350e-01;\ntemperature = 1473.00;\ntime = 500400.00;\nlength = 1.200000e-03;\ninitpos = 5.598362e-04;\nexppath = src/nialta/experimetaldata-ta-1473K-c3.txt;\ndbname = AL-NI-TA;\n\n\n[ta-1523K-c1]\nelements = Al, Ta, Ni;\nclefts = 5.0000e-04, 2.7400e-02, 9.7150e-01;\ncrights = 2.8000e-02, 0.0000e+00, 9.7260e-01;\ntemperature = 1523.00;\ntime = 172800.00;\nlength = 1.200000e-03;\ninitpos = 5.535052e-04;\nexppath = src/nialta/experimetaldata-ta-1523K-c1.txt;\ndbname = AL-NI-TA;\n\n\n[ta-1523K-c2]\nelements = Al, Ta, Ni;\nclefts = 3.7600e-02, 1.7800e-02, 9.4460e-01;\ncrights = 0.0000e+00, 0.0000e+00, 1.0000e+00;\ntemperature = 1523.00;\ntime = 172800.00;\nlength = 1.300000e-03;\ninitpos = 7.528331e-04;\nexppath = src/nialta/experimetaldata-ta-1523K-c2.txt;\ndbname = AL-NI-TA;\n\n\n[ta-1523K-c3]\nelements = Al, Ta, Ni;\nclefts = 1.8200e-02, 2.6600e-02, 9.5520e-01;\ncrights = 0.0000e+00, 0.0000e+00, 1.0000e+00;\ntemperature = 1523.00;\ntime = 172800.00;\nlength = 1.200000e-03;\ninitpos = 6.543567e-04;\nexppath = src/nialta/experimetaldata-ta-1523K-c3.txt;\ndbname = AL-NI-TA;\n\n\n[ta-1573K-c1]\nelements = Al, Ta, Ni;\nclefts = 2.8000e-02, 0.0000e+00, 9.7200e-01;\ncrights = 1.0000e-03, 2.5700e-02, 9.7330e-01;\ntemperature = 1573.00;\ntime = 25320.00;\nlength = 1.000000e-03;\ninitpos = 5.557439e-04;\nexppath = src/nialta/experimetaldata-ta-1573K-c1.txt;\ndbname = AL-NI-TA;\n\n\n[ta-1573K-c2]\nelements = Al, Ta, Ni;\nclefts = 3.8800e-02, 1.7000e-02, 9.4420e-01;\ncrights = 0.0000e+00, 0.0000e+00, 1.0000e+00;\ntemperature = 1573.00;\ntime = 25320.00;\nlength = 8.000000e-04;\ninitpos = 4.644994e-04;\nexppath = src/nialta/experimetaldata-ta-1573K-c2.txt;\ndbname = AL-NI-TA;\n\n\n[ta-1573K-c3]\nelements = Al, Ta, Ni;\nclefts = 1.8900e-02, 2.6300e-02, 9.5480e-01;\ncrights = 0.0000e+00, 0.0000e+00, 1.0000e+00;\ntemperature = 1573.00;\ntime = 25320.00;\nlength = 8.000000e-04;\ninitpos = 3.978326e-04;\nexppath = src/nialta/experimetaldata-ta-1573K-c3.txt;\ndbname = AL-NI-TA;\n\n\n[Ta-Ni-1473]\nelements = Ta, Ni;\nclefts = 0.0000e+00, 1.0000e+00;\ncrights = 2.8610e-02, 9.7139e-01;\ntemperature = 1473.00;\ntime = 252000.00;\nlength = 8.024000e-04;\ninitpos = 3.905505e-04;\nexppath = src/nita/Ta-1473-252.txt;\ndbname = NI-TA;\n\n\n[Ta-Ni-1523]\nelements = Ta, Ni;\nclefts = 0.0000e+00, 1.0000e+00;\ncrights = 2.8850e-02, 9.7115e-01;\ntemperature = 1523.00;\ntime = 129600.00;\nlength = 8.069000e-04;\ninitpos = 4.142025e-04;\nexppath = src/nita/Ta-1523-129.txt;\ndbname = NI-TA;\n\n\n[Ta-Ni-1573]\nelements = Ta, Ni;\nclefts = 0.0000e+00, 1.0000e+00;\ncrights = 2.8170e-02, 9.7183e-01;\ntemperature = 1573.00;\ntime = 86400.00;\nlength = 8.009000e-04;\ninitpos = 4.033774e-04;\nexppath = src/nita/Ta-1573-86.txt;\ndbname = NI-TA;\n\n\n[Ta-Ni-1623]\nelements = Ta, Ni;\nclefts = 0.0000e+00, 1.0000e+00;\ncrights = 2.8650e-02, 9.7135e-01;\ntemperature = 1623.00;\ntime = 28800.00;\nlength = 8.025000e-04;\ninitpos = 4.132700e-04;\nexppath = src/nita/Ta-1623-28.txt;\ndbname = NI-TA;\n",
+            "item": "simulation.input"
+        },
+        {
+            "content": "\n[AL-NI-TA]\nGAB0 = 16.213*T - 162408;\nGAB1 = -34.914*T + 73418;\nGAB2 = -9.837*T + 33471;\nGAB3 = 10.253*T - 30758;\nGBC0 = -18.023*T - 55757.1;\nGBC2 = -12.112*T - 25125.9;\nMQA_A0 = -97.34*T - 123111.56;\nMQA_B0 = -71.04*T - 268381;\nMQA_C0 = -75.14*T - 265535;\nMQA_AB0 = -27571;\nMQA_BC0 = A0;\nMQB_A0 = -64.85*T - 144600;\nMQB_B0 = -81.79*T - 271378;\nMQB_C0 = -75.14*T - 265535;\nMQC_A0 = -97.34*T - 123111.56;\nMQC_B0 = -72.8*T - 276000;\nMQC_C0 = -75.14*T - 265535;\nMQC_AB0 = A1;\nMQC_BC0 = A2;\n\n[NI-TA]\nGAB0 = -18.023*T - 55757.1;\nGAB2 = -12.112*T - 25125.9;\nMQA_A0 = -81.79*T - 271378;\nMQA_B0 = -75.14*T - 265535;\nMQB_A0 = -72.8*T - 276000;\nMQB_B0 = -75.14*T - 265535;\nMQB_AB0 = A2;\n",
+            "item": "database.input"
+        }
+    ],
+    "record": [
+        {
+            "elapsed": 62081.804597472,
+            "id": "txY2ks"
+        },
+        {
+            "elapsed": 107.4139249,
+            "id": "xO0v10"
+        }
+    ]
+}

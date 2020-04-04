@@ -1,12 +1,6 @@
 ## Welcome to HitDIC Documentation
 
-HitDIC is a powerful but free-accessible software for automating the procedures to retrieve the composition-dependent interdiffusion coefficient matrices for systems with any numbers of components based on the original experimental composition profiles using the numerical inverse method, developed by Prof. Lijun Zhang's group at Central South University, P.R. China.
-
 This repository is used to release the usages for the latest version of HitDIC.
-
-Ref. 1 [HitDIC Home](https://hitdic.com)
-Ref. 2 [Jing Zhong, Weimin Chen and Lijun Zhang, HitDIC: A free-accessible code for High-throughput Determination of Interdiffusion Coefficients in single solution phase, CALPHAD, 60 (2018) 177-190.](https://doi.org/10.1016/j.calphad.2017.12.004)
-Ref. 3 [Jing Zhong, Lijun Zhang, Xiaoke Wu, Li Chen and Chunming Deng, A novel computational framework for establishment of atomic mobility database directly from composition profiles and its uncertainty quantification. Journal of Materials Science & Technology. 2020 Mar 18.](https://doi.org/10.1016/j.jmst.2019.12.038)
 
 Currently, HitDIC on Windows is publicly available on [hitdic.com](https://hitdic.com). For Linux distributions, as well as HPC cluster with MPI support, please contact us for technical support.
 
@@ -75,6 +69,13 @@ hitdic-mcmc
 ### Examples
 
 - fcc CuAgSn
+- [fcc NiAlTa](examples/nialta/mcmc/readme.md)
+
+### Reference
+
+- Ref. 1 [HitDIC Home](https://hitdic.com)
+- Ref. 2 [Jing Zhong, Weimin Chen and Lijun Zhang, HitDIC: A free-accessible code for High-throughput Determination of Interdiffusion Coefficients in single solution phase, CALPHAD, 60 (2018) 177-190.](https://doi.org/10.1016/j.calphad.2017.12.004)
+- Ref. 3 [Jing Zhong, Lijun Zhang, Xiaoke Wu, Li Chen and Chunming Deng, A novel computational framework for establishment of atomic mobility database directly from composition profiles and its uncertainty quantification. Journal of Materials Science & Technology. 2020 Mar 18.](https://doi.org/10.1016/j.jmst.2019.12.038)
 
 ### FAQs
 

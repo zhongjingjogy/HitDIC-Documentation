@@ -1,0 +1,155 @@
+
+[ta-1473K-c1]
+elements = Al, Ta, Ni;
+clefts = 5.0000e-04, 2.7700e-02, 9.7180e-01;
+crights = 2.7500e-02, 0.0000e+00, 9.7250e-01;
+temperature = 1473.00;
+time = 500400.00;
+length = 1.200000e-03;
+initpos = 5.641974e-04;
+exppath = src/nialta/experimetaldata-ta-1473K-c1.txt;
+dbname = AL-NI-TA;
+
+
+[ta-1473K-c2]
+elements = Al, Ta, Ni;
+clefts = 0.0000e+00, 0.0000e+00, 9.6200e-01;
+crights = 3.8000e-02, 1.7400e-02, 9.8260e-01;
+temperature = 1473.00;
+time = 500400.00;
+length = 1.400000e-03;
+initpos = 6.458873e-04;
+exppath = src/nialta/experimetaldata-ta-1473K-c2.txt;
+dbname = AL-NI-TA;
+
+
+[ta-1473K-c3]
+elements = Al, Ta, Ni;
+clefts = 0.0000e+00, 0.0000e+00, 1.0000e+00;
+crights = 1.9000e-02, 2.7500e-02, 9.5350e-01;
+temperature = 1473.00;
+time = 500400.00;
+length = 1.200000e-03;
+initpos = 5.598362e-04;
+exppath = src/nialta/experimetaldata-ta-1473K-c3.txt;
+dbname = AL-NI-TA;
+
+
+[ta-1523K-c1]
+elements = Al, Ta, Ni;
+clefts = 5.0000e-04, 2.7400e-02, 9.7150e-01;
+crights = 2.8000e-02, 0.0000e+00, 9.7260e-01;
+temperature = 1523.00;
+time = 172800.00;
+length = 1.200000e-03;
+initpos = 5.535052e-04;
+exppath = src/nialta/experimetaldata-ta-1523K-c1.txt;
+dbname = AL-NI-TA;
+
+
+[ta-1523K-c2]
+elements = Al, Ta, Ni;
+clefts = 3.7600e-02, 1.7800e-02, 9.4460e-01;
+crights = 0.0000e+00, 0.0000e+00, 1.0000e+00;
+temperature = 1523.00;
+time = 172800.00;
+length = 1.300000e-03;
+initpos = 7.528331e-04;
+exppath = src/nialta/experimetaldata-ta-1523K-c2.txt;
+dbname = AL-NI-TA;
+
+
+[ta-1523K-c3]
+elements = Al, Ta, Ni;
+clefts = 1.8200e-02, 2.6600e-02, 9.5520e-01;
+crights = 0.0000e+00, 0.0000e+00, 1.0000e+00;
+temperature = 1523.00;
+time = 172800.00;
+length = 1.200000e-03;
+initpos = 6.543567e-04;
+exppath = src/nialta/experimetaldata-ta-1523K-c3.txt;
+dbname = AL-NI-TA;
+
+
+[ta-1573K-c1]
+elements = Al, Ta, Ni;
+clefts = 2.8000e-02, 0.0000e+00, 9.7200e-01;
+crights = 1.0000e-03, 2.5700e-02, 9.7330e-01;
+temperature = 1573.00;
+time = 25320.00;
+length = 1.000000e-03;
+initpos = 5.557439e-04;
+exppath = src/nialta/experimetaldata-ta-1573K-c1.txt;
+dbname = AL-NI-TA;
+
+
+[ta-1573K-c2]
+elements = Al, Ta, Ni;
+clefts = 3.8800e-02, 1.7000e-02, 9.4420e-01;
+crights = 0.0000e+00, 0.0000e+00, 1.0000e+00;
+temperature = 1573.00;
+time = 25320.00;
+length = 8.000000e-04;
+initpos = 4.644994e-04;
+exppath = src/nialta/experimetaldata-ta-1573K-c2.txt;
+dbname = AL-NI-TA;
+
+
+[ta-1573K-c3]
+elements = Al, Ta, Ni;
+clefts = 1.8900e-02, 2.6300e-02, 9.5480e-01;
+crights = 0.0000e+00, 0.0000e+00, 1.0000e+00;
+temperature = 1573.00;
+time = 25320.00;
+length = 8.000000e-04;
+initpos = 3.978326e-04;
+exppath = src/nialta/experimetaldata-ta-1573K-c3.txt;
+dbname = AL-NI-TA;
+
+
+[Ta-Ni-1473]
+elements = Ta, Ni;
+clefts = 0.0000e+00, 1.0000e+00;
+crights = 2.8610e-02, 9.7139e-01;
+temperature = 1473.00;
+time = 252000.00;
+length = 8.024000e-04;
+initpos = 3.905505e-04;
+exppath = src/nita/Ta-1473-252.txt;
+dbname = NI-TA;
+
+
+[Ta-Ni-1523]
+elements = Ta, Ni;
+clefts = 0.0000e+00, 1.0000e+00;
+crights = 2.8850e-02, 9.7115e-01;
+temperature = 1523.00;
+time = 129600.00;
+length = 8.069000e-04;
+initpos = 4.142025e-04;
+exppath = src/nita/Ta-1523-129.txt;
+dbname = NI-TA;
+
+
+[Ta-Ni-1573]
+elements = Ta, Ni;
+clefts = 0.0000e+00, 1.0000e+00;
+crights = 2.8170e-02, 9.7183e-01;
+temperature = 1573.00;
+time = 86400.00;
+length = 8.009000e-04;
+initpos = 4.033774e-04;
+exppath = src/nita/Ta-1573-86.txt;
+dbname = NI-TA;
+
+
+[Ta-Ni-1623]
+elements = Ta, Ni;
+clefts = 0.0000e+00, 1.0000e+00;
+crights = 2.8650e-02, 9.7135e-01;
+temperature = 1623.00;
+time = 28800.00;
+length = 8.025000e-04;
+initpos = 4.132700e-04;
+exppath = src/nita/Ta-1623-28.txt;
+dbname = NI-TA;
