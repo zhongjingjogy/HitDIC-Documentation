@@ -1,0 +1,50 @@
+{
+    "_result": [
+        {
+            "comid": "A0-A1-A2-A3-A4-A5-A6",
+            "elapsed": 280.6791593,
+            "opid": "varselga-rRqKbh",
+            "result": {
+                "cost": 0.001029798885584866,
+                "unknowns": [
+                    "A0",
+                    "A1",
+                    "A2",
+                    "A3",
+                    "A4",
+                    "A5",
+                    "A6"
+                ],
+                "values": [
+                    299926.7578125,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    244921.875
+                ]
+            }
+        }
+    ],
+    "input": [
+        {
+            "content": "\n[varselga]\nmaxiter = 2;\nbounds = (default, -300, 300);\nguess = hitdic-restart.json;\n\n[mcmc]\n",
+            "item": "optimize.input"
+        },
+        {
+            "content": "\n\n[couple0]\nelements = Sn, Ag, Cu;\nclefts = 0.018287, 0.000354, 0.981359;\ncrights = 0.000532, 0.019605, 0.979863;\ntemperature = 1073;\ntime = 129600;\ndbname = default;\nexppath = src/1sn.exp.0;\nlength = 0.001530013;\ninitpos = 0.000774005;\n\n[couple1]\nelements = Sn, Ag, Cu;\nclefts = 0.000567, 0.000279, 0.999154;\ncrights = 0.016315, 0.02748, 0.956841;\ntemperature = 1073;\ntime = 129600;\ndbname = default;\nexppath = src/1sn.exp.1;\nlength = 0.001324377;\ninitpos = 0.000741251;\n\n[couple2]\nelements = Sn, Ag, Cu;\nclefts = 1.4e-05, 0.000356, 0.99963;\ncrights = 0.038632, 0.010319, 0.951049;\ntemperature = 1073;\ntime = 129600;\ndbname = default;\nexppath = src/1sn.exp.2;\nlength = 0.001698768;\ninitpos = 0.000654507;\n\n\n[couple3]\nelements = Sn, Ag, Cu;\nclefts = 0.029743, 0.000216, 0.970041;\ncrights = 0.000128, 0.019571, 0.980301;\ntemperature = 1073;\ntime = 129600;\ndbname = default;\nexppath = src/1sn.exp.3;\nlength = 0.001828997;\ninitpos = 0.000812599;\n\n[couple4]\nelements = Sn, Ag, Cu;\nclefts = 0.019228, 0.0, 0.981361;\ncrights = 0.000966, 0.035791, 0.963243;\ntemperature = 1073;\ntime = 129600;\ndbname = default;\nexppath = src/1sn.exp.4;\nlength = 0.002;\ninitpos = 0.000944;",
+            "item": "simulation.input"
+        },
+        {
+            "content": "\n[default]\nGAB0 = +36061.88-10.44288*T;\nGAB1 = -4310.12;\nGAC0 = +745.45+11.498027*T;\nGAC1 = -36541.5;\nGBC0 = -11106.95+2.07910*T;\nGBC1 = -15718.02+5.92467*T;\n\nMQA_A0 = -175892-93.5*T; \nMQA_B0 = -191533-82.93*T;\nMQA_C0 = -59345-85.3578*T;  \n\nMQB_B0 = -205872-82.52*T; \nMQB_A0 = -179012-87.49*T; \nMQB_C0 = -59345-85.3578*T;  \n\nMQC_A0 = -166245.24-86.8*T; \nMQC_C0 = -59345-85.3578*T;  \nMQC_B0 = -1.72907082E+05-9.17770478E+01*T;\n\nMQA_AB0 = A0;\nMQA_AC0 = A1;\nMQA_BC0 = A2;\nMQB_AB0 = A3;\nMQB_AC0 = A4;\nMQC_AC0 = A5;\nMQC_AB0 = A6;\n\n# MQB_BC0 = 0.00153282 + 1.51805488*T;\n# MQC_BC0 = -0.04799145 + 16.69766038*T;\n",
+            "item": "database.input"
+        }
+    ],
+    "record": [
+        {
+            "elapsed": 280.8895705,
+            "id": "rRqKbh"
+        }
+    ]
+}

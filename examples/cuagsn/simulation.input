@@ -1,0 +1,56 @@
+
+[couple0]
+elements = Sn, Ag, Cu;
+clefts = 0.018287, 0.000354, 0.981359;
+crights = 0.000532, 0.019605, 0.979863;
+temperature = 1073;
+time = 129600;
+dbname = default;
+exppath = src/1sn.exp.0;
+length = 0.001530013;
+initpos = 0.000774005;
+
+[couple1]
+elements = Sn, Ag, Cu;
+clefts = 0.000567, 0.000279, 0.999154;
+crights = 0.016315, 0.02748, 0.956841;
+temperature = 1073;
+time = 129600;
+dbname = default;
+exppath = src/1sn.exp.1;
+length = 0.001324377;
+initpos = 0.000741251;
+
+[couple2]
+elements = Sn, Ag, Cu;
+clefts = 1.4e-05, 0.000356, 0.99963;
+crights = 0.038632, 0.010319, 0.951049;
+temperature = 1073;
+time = 129600;
+dbname = default;
+exppath = src/1sn.exp.2;
+length = 0.001698768;
+initpos = 0.000654507;
+
+
+[couple3]
+elements = Sn, Ag, Cu;
+clefts = 0.029743, 0.000216, 0.970041;
+crights = 0.000128, 0.019571, 0.980301;
+temperature = 1073;
+time = 129600;
+dbname = default;
+exppath = src/1sn.exp.3;
+length = 0.001828997;
+initpos = 0.000812599;
+
+[couple4]
+elements = Sn, Ag, Cu;
+clefts = 0.019228, 0.0, 0.981361;
+crights = 0.000966, 0.035791, 0.963243;
+temperature = 1073;
+time = 129600;
+dbname = default;
+exppath = src/1sn.exp.4;
+length = 0.002;
+initpos = 0.000944;

@@ -1,0 +1,7 @@
+var TaskInfo = (function () {
+    return {
+        taskinfo: function () {
+            return {"taskid": "unknown", "title": "unknown", "note": "unknown", "status": "unknown", "method": "AICc", "corenumber": 0, "createdtime": "2020-04-04 21:00:41.086959", "username": "unknown", "computingnode": "unknown", "result": {"method": "AICc", "src": "D:\\work\\diffusion-couples\\CuAgSn", "couples": [{"couplename": "couple0", "temperature": 1073.0, "time": 129600.0, "initpos": 0.000774005}, {"couplename": "couple1", "temperature": 1073.0, "time": 129600.0, "initpos": 0.000741251}, {"couplename": "couple2", "temperature": 1073.0, "time": 129600.0, "initpos": 0.000654507}, {"couplename": "couple3", "temperature": 1073.0, "time": 129600.0, "initpos": 0.000812599}, {"couplename": "couple4", "temperature": 1073.0, "time": 129600.0, "initpos": 0.000944}], "logfile": "varselga-rRqKbh", "number": 7, "unknowns": [{"key": "A0", "value": 299926.7578125}, {"key": "A1", "value": 0.0}, {"key": "A2", "value": 0.0}, {"key": "A3", "value": 0.0}, {"key": "A4", "value": 0.0}, {"key": "A5", "value": 0.0}, {"key": "A6", "value": 244921.875}], "cost": 0.001029798885584866, "elapsed": 280.6791593, "error": null}};
+        }
+    }
+})(TaskInfo || {})

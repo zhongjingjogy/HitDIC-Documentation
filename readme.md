@@ -40,6 +40,8 @@ In case that interdiffusion fluxes and slopes of the diffusion couples are reque
 hitdicplot --full
 ```
 
+Result files will be restored in the `.cache` folder in the form of `svg`. One might visualize the result with browser.
+
 ### Parameter Selection and Parameter Estimation
 The variable selection genetic algorithm will be employed in this option. The `optimize.input` has to be customized 
 ```
@@ -68,14 +70,14 @@ hitdic-mcmc
 
 ### Examples
 
-- fcc CuAgSn
+- [fcc CuAgSn](examples/cuagsn/readme.md)
 - [fcc NiAlTa](examples/nialta/mcmc/readme.md)
 
 ### Reference
 
-- Ref. 1 [HitDIC Home](https://hitdic.com)
-- Ref. 2 [Jing Zhong, Weimin Chen and Lijun Zhang, HitDIC: A free-accessible code for High-throughput Determination of Interdiffusion Coefficients in single solution phase, CALPHAD, 60 (2018) 177-190.](https://doi.org/10.1016/j.calphad.2017.12.004)
-- Ref. 3 [Jing Zhong, Lijun Zhang, Xiaoke Wu, Li Chen and Chunming Deng, A novel computational framework for establishment of atomic mobility database directly from composition profiles and its uncertainty quantification. Journal of Materials Science & Technology. 2020 Mar 18.](https://doi.org/10.1016/j.jmst.2019.12.038)
+- [HitDIC Home](https://hitdic.com)
+- [Jing Zhong, Weimin Chen and Lijun Zhang, HitDIC: A free-accessible code for High-throughput Determination of Interdiffusion Coefficients in single solution phase, CALPHAD, 60 (2018) 177-190.](https://doi.org/10.1016/j.calphad.2017.12.004)
+- [Jing Zhong, Lijun Zhang, Xiaoke Wu, Li Chen and Chunming Deng, A novel computational framework for establishment of atomic mobility database directly from composition profiles and its uncertainty quantification. Journal of Materials Science & Technology. 2020 Mar 18.](https://doi.org/10.1016/j.jmst.2019.12.038)
 
 ### FAQs
 

@@ -1,0 +1,5 @@
+[varselga]
+maxiter = 100;
+bounds = (default, -300, 300);
+
+[mcmc]
