@@ -1,0 +1,46 @@
+[Ta-Ni-1473]
+elements = Ta, Ni;
+clefts = 0.0000e+00, 1.0000e+00;
+crights = 2.8610e-02, 9.7139e-01;
+temperature = 1473.00;
+time = 252000.00;
+length = 8.024000e-04;
+initpos = 3.905505e-04;
+exppath = src/nita/Ta-1473-252.txt;
+dbname = NI-TA;
+
+
+[Ta-Ni-1523]
+elements = Ta, Ni;
+clefts = 0.0000e+00, 1.0000e+00;
+crights = 2.8850e-02, 9.7115e-01;
+temperature = 1523.00;
+time = 129600.00;
+length = 8.069000e-04;
+initpos = 4.142025e-04;
+exppath = src/nita/Ta-1523-129.txt;
+dbname = NI-TA;
+
+
+[Ta-Ni-1573]
+elements = Ta, Ni;
+clefts = 0.0000e+00, 1.0000e+00;
+crights = 2.8170e-02, 9.7183e-01;
+temperature = 1573.00;
+time = 86400.00;
+length = 8.009000e-04;
+initpos = 4.033774e-04;
+exppath = src/nita/Ta-1573-86.txt;
+dbname = NI-TA;
+
+
+[Ta-Ni-1623]
+elements = Ta, Ni;
+clefts = 0.0000e+00, 1.0000e+00;
+crights = 2.8650e-02, 9.7135e-01;
+temperature = 1623.00;
+time = 28800.00;
+length = 8.025000e-04;
+initpos = 4.132700e-04;
+exppath = src/nita/Ta-1623-28.txt;
+dbname = NI-TA;

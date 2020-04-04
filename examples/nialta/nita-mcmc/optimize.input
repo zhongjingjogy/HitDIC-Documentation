@@ -1,0 +1,9 @@
+[varselga]
+maxiter = 500;
+bounds = (default, -1000, 0);
+guess = hitdic-restart.json;
+
+[mcmc]
+maxiter = 10000;
+chainnumber = 11;
+guess = hitdic-restart.json;
