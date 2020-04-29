@@ -1,0 +1,16 @@
+[common]
+components = AA, BB;
+dx = 1.0e-4;
+maxdt = 2000.0;
+temperature = 1453;
+time = 362880.0;
+region = 0, 0, 200e-5, 200e-5;
+composition = 0.01, 0.99;
+
+[region1]
+region = 50e-5, 50e-5, 150e-5, 150e-5;
+composition = 0.05, 0.95;
+
+
+
+
