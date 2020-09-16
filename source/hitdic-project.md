@@ -1,6 +1,7 @@
-## Instruction on preparing the HitDIC project
+# Instruction on HitDIC project
 
-### Experimental data
+
+## src: folder for experimental data
 
 Experimental data refers to the observation of composition profiles measured from diffusion couple experiments. In HitDIC, all experimental data are stored in text format as columns. In case that there are many diffusion couples, one might have to put them in different files of text format and assign different names to those files.
 
@@ -24,7 +25,7 @@ Taking the CuAgSn system as an example, data of six columns is expected
 0.001530	0.000532	0.001530	0.019605	0.001530	0.979863
 ```
 
-### simulation.input
+## simulation.input: information of diffusion couples
 
 Simulation input is used to specify the information of diffusion couples, i.e., composition of end members, annealing time, annealing temperature, length and Matano position and etc. Such information is the essential input for setting up the simulation conditions for the diffusion couples using the Fick’s second law.
 
@@ -63,115 +64,59 @@ dbname = default;
 exppath = src/1sn.exp.1;
 length = 0.001324377;
 initpos = 0.000741251;
-
 ```
 
-### database.input
 
-Database input is used to stored the information of the thermodynamic parameters and atomic mobility parameters. Two kinds of parameters are to be stored in this file: thermodynamic parameters and atomic mobility parameters. To specify the database information, one have to follow the simplified markup rules in HitDIC, which is used to tranlate the thermodynamic and atomic mobility database parameters into the notation for HitDIC.
+## database.input: information of the kinetic description
 
-#### From Periodic Symbol to Alphabatic Symbol
 
-In order to convert the CALPHAD notation into HitDIC notation, the Periodic Symbol should be translated into Alphabatic Symbol. This means the user has to sorted the elements mannually according to their Periodic Symbols.
+Database input is used to stored the information of the thermodynamic parameters and atomic mobility parameters. Two kinds of parameters are to be stored in this file: thermodynamic parameters and atomic mobility parameters. To specify the database information, one have to follow the CALPHAD notion.
 
-**Cu, Ag, Sn –> Ag, Cu, Sn**
-
-And thus,
-
-|Periodic Symbol	| Alphabatic Symbol |
-|-------------------|-------------------|
-|Cu	| B |
-|Ag	| A |
-|Sn	| C |
-
-#### From CALPHAD notation to HitDIC notation
-
-With the convertion rule above, the parameter denoted by CALPHAD notation can now be translated into HitDIC notation.
-
-| CALPHAD Notation	| HitDIC Notation	| Example |
-|-------------------|-------------------|-----------|
-| G(FCC,Ag,Cu;0)	        | GAB0	            | GAB0 = +36061.88-10.44288*T; |
-| G(FCC,Ag,Cu;1)	        | GAB1	            | GAB1 = -4310.12; |
-| G(FCC,Ag,Sn;0)	        | GAC0	            | GAC0 = +745.45+11.498027*T; |
-| G(FCC,Ag,Sn;1)	        | GAC1	            | GAC1 = -36541.5; |
-| G(FCC,Cu,Sn;0)	        | GBC0	            | GBC0 = -11106.95+2.07910*T; |
-| G(FCC,Cu,Sn;1)	        | GBC1	            | GBC1 = -15718.02+5.92467*T; |
-
-*Note* Contribution from magnetic ordering to Gibbs energy can also be considered by using the HitDIC notation of TC and BMAGN.
-
-|CALPHAD Notation	|HitDIC Notation|	Example|
-|-------------------|----------------|----------|
-|End-members	 	 |              |           |
-|MQ(FCC&Ag,Ag;0)	          |  MQA_A0	     |   MQA_A0 = -175892-93.5*T;|
-|MQ(FCC&Cu,Ag;0)	          |  MQA_B0	     |   MQA_B0 = -191533-82.93*T;|
-|MQ(FCC&Sn,Ag;0)	          |  MQA_C0	     |   MQA_C0 = -59345-85.3578*T;|
-|MQ(FCC&Ag,Cu;0)	          |  MQB_A0	     |   MQB_A0 = -205872-82.52*T;|
-|MQ(FCC&Cu,Cu;0)	          |  MQB_B0	     |   MQB_B0 = -179012-87.49*T;|
-|MQ(FCC&Sn,Cu;0)	          |  MQB_C0	     |   MQB_C0 = -59345-85.3578*T;|
-|MQ(FCC&Ag,Sn;0)	          |  MQC_A0	     |   MQC_A0 = -166245.24-86.8*T;|
-|MQ(FCC&Cu,Sn;0)	          |  MQC_B0	     |   MQC_C0 = -59345-85.3578*T;|
-|MQ(FCC&Sn,Sn;0)	          |  MQC_C0	     |   MQC_B0 = -1.72907082E+05-9.17770478E+01*T;|
-|Interactions	 	   |                     |                              |
-|MQ(FCC&Ag,Cu,Ag;0)	       | MQA_AB0	     |   MQA_AB0 = 100190.00136125;|
-|MQ(FCC&Ag,Sn,Ag;0)	       | MQA_AC0	     |   MQA_AC0 = -195245.22880078;|
-|MQ(FCC&Cu,Sn,Ag;0)	       | MQA_BC0	     |   MQA_BC0 = 160022.98017274;|
-|MQ(FCC&Ag,Cu,Cu;0)	       | MQB_AB0	     |   MQB_AB0 = -200212.73084957;|
-|MQ(FCC&Cu,Sn,Cu;0)	       | MQB_BC0	     |   MQB_BC0 = -200026.69215919;|
-|MQ(FCC&Ag,Sn,Cu;0)	       | MQB_AC0	     |   MQB_AC0 = -200004.82397301;|
-|MQ(FCC&Ag,Sn,Sn;0)	       | MQC_AC0	     |   MQC_AC0 = -207551.89564001;|
-|MQ(FCC&Cu,Sn,Sn;0)	       | MQC_BC0	     |   MQC_BC0 = 40218.25749531;|
-|MQ(FCC&Ag,Cu,Sn;0)	       | MQC_AB0	     |   MQC_AB0 = 216953.04097880;|
-
-Here comes the example for writing the database input file for HitDIC. A block for the database description for a phase should be begin with a tag to be used in Simulation input.
+A block for the database description for a phase should be begin with a tag to be used in Simulation input.
 ```
 [default]
-GAB0 = +36061.88-10.44288*T;
-GAB1 = -4310.12;
-GAC0 = +745.45+11.498027*T;
-GAC1 = -36541.5;
-GBC0 = -11106.95+2.07910*T;
-GBC1 = -15718.02+5.92467*T;
-MQA_A0 = -175892-93.5*T;
-MQA_B0 = -191533-82.93*T;
-MQA_C0 = -59345-85.3578*T;
-MQB_B0 = -205872-82.52*T;
-MQB_A0 = -179012-87.49*T;
-MQB_C0 = -59345-85.3578*T;
-MQC_A0 = -166245.24-86.8*T;
-MQC_C0 = -59345-85.3578*T;
-MQC_B0 = -1.72907082E+05-9.17770478E+01*T;
-MQA_AB0 = 100190.00136125;
-MQA_AC0 = -195245.22880078;
-MQA_BC0 = 160022.98017274;
-MQB_AB0 = -200212.73084957;
-MQB_BC0 = -200026.69215919;
-MQB_AC0 = -200004.82397301;
-MQC_AC0 = -207551.89564001;
-MQC_BC0 = 40218.25749531;
-MQC_AB0 = 216953.04097880;
+ PARAMETER G(FCC,AG,CU;0) 298.15  +36061.88-10.44288*T; 3000 N !
+ PARAMETER G(FCC,AG,CU;1) 298.15  -4310.12; 3000 N !
+ PARAMETER G(FCC,AG,SN;0) 298.15  +745.45+11.498027*T; 3000 N !
+ PARAMETER G(FCC,AG,SN;1) 298.15  -36541.5; 3000 N !
+ PARAMETER G(FCC,CU,SN;0) 298.15  -11106.95+2.07910*T; 3000 N !
+ PARAMETER G(FCC,CU,SN;1) 298.15  -15718.02+5.92467*T; 3000 N !
+
+ PARAMETER MQ(FCC&AG,AG;0) 298.15  -175892-93.5*T; 3000 N !
+ PARAMETER MQ(FCC&AG,CU;0) 298.15  -191533-82.93*T; 3000 N !
+ PARAMETER MQ(FCC&AG,SN;0) 298.15  -59345-85.3578*T; 3000 N !
+ PARAMETER MQ(FCC&CU,AG;0) 298.15  -179012-87.49*T; 3000 N !
+ PARAMETER MQ(FCC&CU,CU;0) 298.15  -205872-82.52*T; 3000 N !
+ PARAMETER MQ(FCC&CU,SN;0) 298.15  -59345-85.3578*T; 3000 N !
+ PARAMETER MQ(FCC&SN,AG;0) 298.15  -166245.24-86.8*T; 3000 N !
+ PARAMETER MQ(FCC&SN,CU;0) 298.15  -1.72907082E+05-9.17770478E+01*T; 3000 N !
+ PARAMETER MQ(FCC&SN,SN;0) 298.15  -59345-85.3578*T; 3000 N !
+
+ PARAMETER MQ(FCC&AG,AG,CU;0) 298.15  A0; 3000 N !
+ PARAMETER MQ(FCC&AG,AG,SN;0) 298.15  A1; 3000 N !
+ PARAMETER MQ(FCC&AG,CU,SN;0) 298.15  A2; 3000 N !
+ PARAMETER MQ(FCC&CU,AG,CU;0) 298.15  A3; 3000 N !
+ PARAMETER MQ(FCC&CU,AG,SN;0) 298.15  A4; 3000 N !
+ PARAMETER MQ(FCC&SN,AG,CU;0) 298.15  A5; 3000 N !
+ PARAMETER MQ(FCC&SN,AG,SN;0) 298.15  A6; 3000 N !
 ```
 
-#### Unknown parameters for Database input
-In order to achive better fitting result in the optimization module (hitdicop). In HitDIC, the unknown parameters should be denoted with specific prefix, i.e., A and B. Unknown parameters with prefix A means that such a parameter has no dependency on temperature. Unknown parameters with prefix B means that such a parameter has dependency on temperature. An example can be used to illustrate how the unknowns are specified:
 
-```
-[default]
-MQA_A0 = -190000;
-MQA_B0 = -190000;
-MQB_A0 = -185000;
-MQB_B0 = -185000;
+### Unknown parameters for Database input
 
-MQA_AB0 = A0 + B0*T;
-MQB_AB0 = A1 + B1*T;
-```
+
+In order to achive better fitting result in the optimization module (hitdicop). In HitDIC, the unknown parameters should be denoted with specific prefix, i.e., A and B. Unknown parameters with prefix A means that such a parameter has no dependency on temperature. Unknown parameters with prefix B means that such a parameter has dependency on temperature. 
 
 *Important* In this example, four unknowns have been specified, i.e, A0, A1, B0, B1. This is a design in HitDIC, which can be used to choose the best strategy for estimating the initial values for different optimization algorithms in hitdicop. For unknown parameters with prefix, A, the default ranges of such parameters are set to be -300000 ~ 300000, while -300 ~ 300 is set to be that of paramters with prefix, B.
 
+## optimization input: settings for the minimizer
 
-### Optimization input
 A set of algorithms have been specified in HitDIC, which can be assessed from hitdicop. This input file is designed in order to modify the default settings.
 
-#### Markov chain Monte Carlo
+
+
+### Markov chain Monte Carlo
+
 |Options	   | Meaning	                                        | Example |
 |--------------|----------------------------------------------------|----------|
 |maxiter	   | Maximum iterations to be executed.	            | maxiter = 2000; |
@@ -190,7 +135,9 @@ chainnumber = 11;
 bounds = (default, -300, 300);
 ```
 
-#### Variable selection genetic algorithm
+## Variable selection genetic algorithm
+
+
 |Options	   | Meaning	                                        | Example |
 |--------------|----------------------------------------------------|----------|
 |maxiter	   | Maximum iterations to be executed.	            | maxiter = 150; |
